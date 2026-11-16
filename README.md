@@ -68,11 +68,13 @@ python -X utf8 生成报告.py --四柱 "戊午 戊午 戊午 戊午" --性别 �
 
 ## 数据依赖与版本
 
-**数据不在仓库里，走 Release。** 仓库本体 24 个文件、约 1.1 MB；数据包 `panshu-sanmingtonghui-data-v1.0.0.zip` 6.7 MB（解压后 19.3 MB / 287 个文件）。
+**数据不在仓库里，走 Release。** 仓库本体 24 个文件、约 1.1 MB；数据包 `panshu-sanmingtonghui-data-v1.0.0.zip` 6.7 MB（解压后 19.3 MB / 287 个文件）。单个 zip，远低于 GitHub Release 每文件 2 GB 的上限，不需要拆分。
 
-- GitHub：<https://github.com/watchkd/panshu-sanmingtonghui-skill/releases/tag/data-v1.0.0>
-- GitCode：<https://gitcode.com/jyjy2025/panshu-sanmingtonghui-skill/releases/tag/data-v1.0.0>
+- 下载：<https://github.com/watchkd/panshu-sanmingtonghui-skill/releases/download/data-v1.0.0/panshu-sanmingtonghui-data-v1.0.0.zip>
+- 版本页：<https://github.com/watchkd/panshu-sanmingtonghui-skill/releases/tag/data-v1.0.0>
 - sha256：`059f390ae099e8d25c67d770f5b48fece966bf3f003fc1048f16ab1053d6848d`
+
+**GitCode 的退化方案**：GitCode 的发行版接口只有 `/releases/:tag` 的增删改查（见 <https://docs.gitcode.com/en/docs/apis/post-api-v-5-repos-owner-repo-releases/>），没有上传附件的接口，网页端也未开放；`raw` 域名对非默认分支返回 403，所以数据包既不塞进 main（会让仓库从 1.1 MB 涨到 7.8 MB），也不挂在 GitCode 的 Release 上。GitCode 仓库（<https://gitcode.com/jyjy2025/panshu-sanmingtonghui-skill>）只放代码与 Release 说明（含 sha256 和下面的下载地址）；数据包从上面那条 GitHub 直链取，下载后先核 sha256 再解压。克隆与更新照常用 GitCode，取数这一步走同一条直链。
 
 **取数顺序**（[抽取层.py](抽取层.py) 第 12–58 行）：
 
