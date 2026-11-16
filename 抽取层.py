@@ -39,11 +39,10 @@ def _check(root):
 
 
 def data_root():
-    cands = []
+    cands = [os.path.join(HERE, 'data')]
     env = os.environ.get('三命通会_数据') or os.environ.get('SANMING_DATA')
     if env:
         cands.append(env)
-    cands.append(os.path.join(HERE, 'data'))
     cands.append(os.path.join(os.path.dirname(HERE), 'data'))
     for c in cands:
         if c and os.path.isdir(c):
