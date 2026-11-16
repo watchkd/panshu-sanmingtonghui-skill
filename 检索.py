@@ -75,7 +75,8 @@ LANE = {
 }
 
 FILES4 = ['索引_按四柱_*.csv', '索引_按格名_*.csv', '键/四柱归一表_*.csv', '键/格名归一表_*.csv']
-SEARCH_DIRS = [HERE, os.path.dirname(HERE)]
+IDX_DIR = os.path.join(EX.DATA_ROOT, '索引')
+SEARCH_DIRS = [IDX_DIR, os.path.join(IDX_DIR, '键'), HERE, os.path.dirname(HERE)]
 
 
 # ---------------- 基础工具 ----------------

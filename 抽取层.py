@@ -2,12 +2,60 @@
 """四版并置器·抽取层：把四个只读包解析成统一条目流。
 不改动任何原包文件；仅读。
 """
-import io, os, re, json, glob, csv
+import io, os, re, sys, json, glob, csv
 
-W_ROOT = r'C:\Users\Administrator\Documents\Trae-CN\temp_20261114_03\蒸馏_三命通会'
-J_ROOT = r'C:\Users\Administrator\Documents\Trae-CN\temp_20261114_03\蒸馏_三命通会_蔣本'
-X_ROOT = r'C:\Users\Administrator\Documents\Trae-CN\temp_20261114_03\蒸馏_三命通会_辛丑\包'
-S_ROOT = r'C:\Users\Administrator\Documents\Trae-CN\temp_20261115_33\蒸馏_三命通会_四库'
+HERE = os.path.dirname(os.path.abspath(__file__))
+DATA_ZIP = 'panshu-sanmingtonghui-data-v1.0.0.zip'
+DATA_URL = ('https://github.com/watchkd/panshu-sanmingtonghui-skill/releases/download/'
+            'data-v1.0.0/' + DATA_ZIP)
+
+# 取数顺序：技能目录下 data/ → 环境变量指定 → 报错退出
+REQUIRED = [('万历', '已校'), ('万历', '技能包'), ('蔣本', '已校'),
+            ('辛丑', '包'), ('四库', '五库'), ('索引', )]
+
+
+def _fail(msg):
+    sys.stderr.write(
+        '\n[数据包缺失] %s\n\n'
+        '这个技能不含四版原文数据，需要单独下载数据包：\n'
+        '  1) 下载 %s\n'
+        '  2) 解压到技能目录，使路径成为 %s\n'
+        '  3) 若放在别处，设环境变量 三命通会_数据 指向该目录\n'
+        '  下载地址：%s\n'
+        '  校验：sha256 059f390ae099e8d25c67d770f5b48fece966bf3f003fc1048f16ab1053d6848d\n'
+        % (msg, DATA_ZIP, os.path.join(HERE, 'data'), DATA_URL))
+    raise SystemExit(2)
+
+
+def _check(root):
+    miss = []
+    for parts in REQUIRED:
+        p = os.path.join(root, *parts)
+        if not os.path.exists(p):
+            miss.append('/'.join(parts))
+    if miss:
+        _fail('目录 %s 下缺少：%s' % (root, '、'.join(miss)))
+    return root
+
+
+def data_root():
+    cands = []
+    env = os.environ.get('三命通会_数据') or os.environ.get('SANMING_DATA')
+    if env:
+        cands.append(env)
+    cands.append(os.path.join(HERE, 'data'))
+    cands.append(os.path.join(os.path.dirname(HERE), 'data'))
+    for c in cands:
+        if c and os.path.isdir(c):
+            return _check(os.path.abspath(c))
+    _fail('未找到数据目录（已试：%s）' % '、'.join(cands))
+
+
+DATA_ROOT = data_root()
+W_ROOT = os.path.join(DATA_ROOT, '万历')
+J_ROOT = os.path.join(DATA_ROOT, '蔣本')
+X_ROOT = os.path.join(DATA_ROOT, '辛丑', '包')
+S_ROOT = os.path.join(DATA_ROOT, '四库')
 
 GAN = '甲乙丙丁戊己庚辛壬癸'
 ZHI = '子丑寅卯辰巳午未申酉戌亥'
