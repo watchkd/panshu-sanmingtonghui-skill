@@ -1,0 +1,197 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>附录·神煞与命例｜甲子 乙亥 庚戌 癸未</title><style>
+:root{--paper:#f6f1e6;--card:#fdfaf3;--ink:#241f1a;--ink2:#5a5046;--line:#ddd2bb;
+--red:#8c2f22;--gold:#a8792a;--rd:#2f5d50}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);
+font-family:"Songti SC","Source Han Serif SC","Noto Serif CJK SC","STSong",SimSun,serif;
+font-size:16.5px;line-height:1.95;-webkit-font-smoothing:antialiased}
+.wrap{max-width:880px;margin:0 auto;padding:56px 46px 80px;background:var(--card);
+box-shadow:0 0 0 1px var(--line),0 18px 50px rgba(60,45,30,.08)}
+h1,h2,h3,h4{font-weight:600;letter-spacing:.04em;line-height:1.5}
+h1{font-size:34px;margin:0 0 6px}
+h2{font-size:23px;margin:56px 0 6px;padding-bottom:10px;border-bottom:1px solid var(--line)}
+h2 .n{color:var(--gold);font-size:15px;letter-spacing:.2em;display:block;margin-bottom:4px}
+h3{font-size:19px;margin:30px 0 8px}
+p{margin:0 0 14px;text-align:justify}
+.lead{color:var(--ink2);font-size:15px}
+.hd{border-bottom:3px double var(--line);padding-bottom:24px;margin-bottom:8px}
+.hd .sub{color:var(--ink2);font-size:15px;letter-spacing:.06em}
+.src{font-size:12.5px;color:#8a7f70;line-height:1.7;margin-top:10px}
+.src b{color:#7a6a52;font-weight:600}
+nav.toc{margin:26px 0 10px;padding:18px 22px;background:#f9f5ea;border:1px solid var(--line)}
+nav.toc ol{margin:0;padding-left:20px;columns:2;column-gap:36px;font-size:14.5px}
+nav.toc a{color:var(--ink2);text-decoration:none;border-bottom:1px dotted #bda98a}
+/* 四柱盘 */
+.pan{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:1px solid var(--line);
+background:#fffdf7;margin:26px 0 8px}
+.pan .c{padding:16px 10px 14px;text-align:center;border-right:1px solid var(--line)}
+.pan .c:last-child{border-right:0}
+.pan .pos{font-size:12.5px;color:var(--gold);letter-spacing:.28em}
+.pan .ss{font-size:12.5px;color:var(--ink2);margin-top:6px;min-height:20px}
+.pan .gz{font-size:44px;line-height:1.25;letter-spacing:.08em;margin:2px 0 4px}
+.pan .cg{font-size:12.5px;color:var(--ink2)}
+.pan .ny{font-size:12px;color:#8a7f70;margin-top:4px}
+.facts{display:grid;grid-template-columns:1fr 1fr;gap:6px 26px;font-size:14.5px;
+color:var(--ink2);margin:16px 0 0}
+.facts b{color:var(--ink);font-weight:600}
+/* 引文 */
+blockquote{margin:10px 0 16px;padding:10px 16px 10px 18px;background:#fffdf6;
+border-left:3px solid var(--gold);font-size:15.5px;color:#3b332a;line-height:1.85}
+blockquote .v{display:inline-block;font-size:12px;color:var(--red);border:1px solid #e0c9bd;
+padding:0 6px;margin-right:8px;vertical-align:2px;letter-spacing:.08em;background:#fdf3ee}
+blockquote .q{letter-spacing:.02em}
+/* 引文下的白话解析 */
+.qk{margin:10px 0 20px}
+.qk blockquote{margin:0}
+.bd{float:right;font-size:11px;padding:1px 7px;border-radius:10px;border:1px solid;
+margin-left:10px;letter-spacing:.02em;font-style:normal}
+.b1{color:#2f5d50;border-color:#a4c3b7;background:#eef5f1}
+.b2{color:#8a6420;border-color:#dcc08a;background:#fbf4e4}
+.b3{color:#8c2f22;border-color:#dcb3a8;background:#fbece8}
+.b4{color:#6b6154;border-color:#cdc3b2;background:#f3efe6}
+.bd.i{float:none;margin:0 3px 0 0;vertical-align:1px}
+.mv{background:#f5f0e3;border:1px solid var(--line);border-left:4px solid var(--gold);
+padding:14px 18px;margin:14px 0}
+.mv p{margin:0 0 6px;font-size:15px;color:#4a4136}
+.lk{color:var(--red);text-decoration:none;border-bottom:1px solid #cbb9a0}
+.lk:hover{border-bottom-color:var(--red)}
+.apx{font-size:13px;margin:0 0 18px}
+.trm{font-size:13px;color:#5a5046;background:#f5f0e3;border-left:3px solid var(--gold);
+padding:8px 12px;margin:8px 0 0;line-height:1.8}
+.trm b{color:#8a6420;font-weight:600}
+.pl{margin:8px 0 0;font-size:15px;color:#332c24}
+.pl .lb{display:inline-block;font-size:11.5px;color:#fff;background:var(--red);
+padding:0 6px;border-radius:3px;margin-right:7px;vertical-align:1px;letter-spacing:.05em}
+.pl.s2 .lb{background:var(--rd)}
+/* 不成立条折叠 */
+details.fold{margin:10px 0 6px;border:1px dashed #d8c9ad;background:#faf6ec;padding:2px 12px}
+details.fold summary{cursor:pointer;font-size:13.5px;color:#8c7a5a;padding:7px 0;
+list-style:none;letter-spacing:.02em}
+details.fold summary::-webkit-details-marker{display:none}
+details.fold summary::before{content:"▸ ";color:var(--gold)}
+details.fold[open] summary::before{content:"▾ "}
+details.fold[open] summary{border-bottom:1px dotted #e2d6bf;margin-bottom:6px}
+details.fold .qk{margin:8px 0 12px}
+/* 定盘卡 */
+.card{background:var(--card);border:1px solid var(--line);border-top:3px solid var(--red);
+padding:16px 20px;margin:18px 0 6px}
+.card h2{font-size:14px;letter-spacing:.24em;color:var(--gold);margin:0 0 10px;font-weight:600}
+.card dl{display:grid;grid-template-columns:6.5em 1fr;gap:6px 12px;margin:0;font-size:14.5px}
+.card dt{color:#8a6420;letter-spacing:.04em}
+.card dd{margin:0;color:#332c24;line-height:1.75}
+/* 大运 */
+.tl{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:22px 0 6px}
+.tl .s{border:1px solid var(--line);background:#fffdf7;padding:12px 12px 14px;position:relative}
+.tl .s .i{position:absolute;top:8px;right:10px;font-size:11.5px;color:#b6a68a}
+.tl .s .gz{font-size:24px;letter-spacing:.1em;margin:2px 0 6px}
+.tl .s .r{font-size:13px;color:var(--ink2);line-height:1.7}
+.tl .s .tag{display:inline-block;font-size:11.5px;color:var(--rd);border:1px solid #cddbd5;
+padding:0 5px;margin-top:6px;background:#f2f7f4}
+table.t{width:100%;border-collapse:collapse;font-size:14.5px;margin:14px 0}
+table.t th,table.t td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
+table.t th{background:#f4eee0;font-weight:600;letter-spacing:.06em;color:#4a4034}
+table.t td.k{white-space:nowrap;color:var(--gold)}
+/* 五栏 */
+.lane{border-top:1px solid var(--line);padding-top:18px;margin-top:26px}
+.lane h3 .en{font-size:12.5px;color:#9b8f7e;letter-spacing:.16em;margin-left:10px;font-weight:400}
+.lane .bh{font-size:16px;color:#332c24}
+.lane .bh::first-letter{font-size:1.1em}
+/* 逐运 */
+.step{border-bottom:1px dashed var(--line);padding:16px 0 10px}
+.step .h{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap}
+.step .h .gz{font-size:21px;letter-spacing:.1em}
+.step .h .m{font-size:13px;color:var(--ink2)}
+.step .h .m i{font-style:normal;color:var(--red)}
+.step p{font-size:15.5px;margin:6px 0 6px}
+.step .basis{font-size:13px;color:#8a7f70;line-height:1.75}
+.step .basis em{font-style:normal;color:var(--red);letter-spacing:.06em}
+/* 神煞 */
+.ss-row{border-bottom:1px solid #ece3d2;padding:14px 0}
+.ss-row .nm{font-size:17px;letter-spacing:.08em}
+.ss-row .nm span{font-size:12.5px;color:var(--gold);margin-left:8px;letter-spacing:.1em}
+.ss-row p{font-size:15px;margin:6px 0 0}
+/* 总结 */
+.end{margin-top:34px;padding:24px 26px;background:#f9f4e8;border:1px solid var(--line)}
+.end p{font-size:16.5px;line-height:2.05;margin:0 0 12px}
+.rule{height:1px;background:var(--line);margin:34px 0}
+.foot{margin-top:44px;padding-top:16px;border-top:1px solid var(--line);
+font-size:12.5px;color:#8a7f70;line-height:1.8}
+/* 报告之外：赞赏与苍盘体验（页尾附加，不参与正文） */
+.promo{margin:44px 0 6px;padding:26px 28px 22px;background:#f4ecda;
+border:1px solid #d3c3a2;border-top:4px solid var(--red)}
+.promo .pt{font-size:15px;letter-spacing:.28em;color:var(--red);margin:0 0 4px;font-weight:600}
+.promo .psub{font-size:14.5px;color:#5a5046;margin:0 0 18px;line-height:1.85}
+.promo .pg{display:grid;grid-template-columns:210px 1fr;gap:24px;align-items:stretch}
+.promo .bx{background:#fffdf7;border:1px solid var(--line);padding:20px 22px 18px;
+position:relative;overflow:visible}
+.promo .bx.qr{text-align:center}
+.promo .bx .bt{font-size:14px;letter-spacing:.14em;color:var(--gold);margin:0 0 10px;
+font-weight:600;text-align:left}
+.promo .bx.qr .bt{text-align:center}
+.promo .bx img{display:block;width:152px;height:152px;margin:2px auto 10px;
+background:#fff;border:1px solid var(--line);padding:6px}
+.promo .bx .cap{font-size:13.5px;color:#5a5046;letter-spacing:.1em}
+.promo .bx p{font-size:15px;line-height:1.95;color:#33302a;margin:0 0 10px;text-align:justify}
+.promo .bx p:last-child{margin-bottom:0}
+.promo .cta{display:inline-block;margin-top:2px;padding:9px 20px;border:1px solid var(--red);
+color:var(--red);text-decoration:none;letter-spacing:.1em;font-size:14.5px;background:#fdf5ee}
+.promo .cta:hover{background:var(--red);color:#fff}
+.promo .note{font-size:14px;color:#6b6154;line-height:1.85;margin:18px 0 0;
+padding-top:14px;border-top:1px dotted #cbb9a0}
+/* 原局 */
+.ys{margin:34px 0 0;padding-top:2px}
+.ys h3 .n2{color:var(--gold);font-size:13px;letter-spacing:.18em;margin-right:10px;font-weight:400}
+.ys .bh{margin-top:2px}
+.calc{margin:16px 0 12px;padding:16px 18px 12px;border:1px solid var(--line);background:#fbf7ec}
+.calc .ct{font-size:13.5px;letter-spacing:.06em;color:var(--red);margin-bottom:8px}
+.calc .ct span{color:#9b8f7e;letter-spacing:0;margin-left:10px;font-size:12.5px}
+.calc table.t{margin:4px 0 8px;font-size:14px}
+.calc table.t td.bar{width:46%;vertical-align:middle}
+.calc .bb{background:#eee5d2;height:8px}
+.calc .bb i{display:block;height:8px;background:linear-gradient(90deg,#d2ad6a,#a8792a)}
+.calc .cn{font-size:12.8px;color:#7c7061;line-height:1.85}
+ul.rel{margin:8px 0 16px;padding-left:20px}
+ul.rel li{font-size:15.5px;margin-bottom:6px;color:#332c24}
+ul.rel li b{color:var(--gold);font-weight:600}
+nav.toc li.sub{font-size:13.6px;padding-left:16px}
+nav.toc li.sub a{border-bottom:0;color:#7d7161}
+@media print{
+  body{background:#fff;font-size:11.5pt}
+  .wrap{box-shadow:none;max-width:none;padding:0 12mm}
+  nav.toc{break-inside:avoid}
+  h2,h3{break-after:avoid}
+  .lane,.step,.ss-row{break-inside:avoid}
+  .calc{break-inside:avoid}
+  a{color:inherit;text-decoration:none}
+  details.fold{display:block}
+  details.fold summary{color:#6b6154}
+  details.fold > *:not(summary){display:block !important}
+  .promo{break-inside:avoid;page-break-inside:avoid;background:#f4ecda;
+    -webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .promo .pg{grid-template-columns:210px 1fr}
+  .promo img{width:152px;height:152px}
+}
+@media (max-width:720px){
+  .promo{padding:20px 18px 16px}
+  .promo .pg{grid-template-columns:1fr;gap:16px}
+  .promo .bx{padding:16px 16px 14px}
+  .promo .bx p,.promo .psub{font-size:14px}
+}
+</style></head><body><div class="wrap">
+<p class="apx"><a class="lk" href="甲子乙亥庚戌癸未.html">← 返回主报告</a></p>
+<h1 style="font-size:30px">附录 · 神煞与命例</h1>
+<p class="lead">甲子 乙亥 庚戌 癸未　男。本页是主报告的第七章与第八章，因篇幅单列；主报告仍完整可读，两处目录与正文入口都指到这里。口径与主报告同：引文逐字标版本，每块原文下附「说人话」与「落到」。</p>
+
+<h2 id="ss"><span class="n">柒</span>神煞全表</h2>
+<p class="lead">四本没有神煞专表，神煞散见于正文。下表只列入盘的：命中的记柱位，柱位若只能按通例推，就标「据原局推」。</p><div class="qk"><blockquote><span class="v">万历本</span><span class="q">必以主本旺相休囚五行生尅制化然後看神煞輕重較量可也若專論神煞則誣矣</span><span class="bd b4">体例说明·不作断语</span></blockquote><div class="src">卷三·总论诸神煞·反例-卷三-025</div><div class="trm"><b>主本</b>　日主与月令；<b>诬</b>　瞎说、不实</div><p class="pl"><span class="lb">说人话</span>先看日主与月令的旺衰、五行的生克，再称神煞的轻重；只讲神煞就是瞎说。</p><p class="pl s2"><span class="lb">落到你身上</span>体例，且是本报告取舍神煞的规矩。先看日主与月令旺衰、五行生克，再称神煞轻重；只讲神煞就是瞎说。故十七个入盘的神煞，本报告只当旁证，不拿它定吉凶。落在日柱与月柱：身弱食旺这个底子，比任何一颗吉星都重。这也是神煞表只列不判的原因。</p></div><div class="qk"><blockquote><span class="v">万历本</span><span class="q">神煞古有百二十名其說穿鑿支離</span><span class="bd b4">体例说明·不作断语</span></blockquote><div class="src">卷三·总论诸神煞·反例-卷三-013</div><div class="trm"><b>穿凿支离</b>　牵强破碎</div><p class="pl"><span class="lb">说人话</span>神煞古有百二十个名目，说法牵强破碎。</p><p class="pl s2"><span class="lb">落到你身上</span>体例。神煞古有百二十个名目，说法牵强破碎；四本正文散见，不立专表。故本报告只取正文点到、柱位可定的十七名，其余一概不列。落在附录神煞表：列出的每一名都标柱位与取向，不列的不作暗中断语。与第贰章五行结构同指一事：轻重在主气，不在名目。</p></div><div class="qk"><blockquote><span class="v">蔣國祥本</span><span class="q">犯者未必皆㐫若内有吉神相扶貴氣相輔當爲吉論</span><span class="bd b1">条件成立</span></blockquote><div class="src">卷三｜總論諸神煞·F3-015</div><div class="trm"><b>扶</b>　帮扶；<b>辅</b>　辅助</div><p class="pl"><span class="lb">说人话</span>犯了神煞不一定都凶；里面有吉神相扶、贵气相帮，就作吉论。</p><p class="pl s2"><span class="lb">落到你身上</span>成立，可用来读本命那几颗凶星。犯煞不一定都凶，有吉神相扶、贵气相帮，就作吉论；本命未上坐天乙贵人，正压着孤辰与截路空亡，故孤辰之孤被贵人分掉一半。落在时柱：吉凶同宫，取吉神制凶煞之意，不取孤克之说。与附录神煞表同指一事。</p></div><div class="qk"><blockquote><span class="v">四库本</span><span class="q">命中犯者當以日上見之為是其餘不論况犯者未必皆㐫若内有吉神相扶貴氣相輔當為吉論</span><span class="bd b2">部分成立</span></blockquote><div class="src">卷三·論十惡大敗·M0017（第209段）</div><div class="trm"><b>日上见之</b>　在日柱上看到才算</div><p class="pl"><span class="lb">说人话</span>犯煞要看日柱上见没见，别柱的不算；何况犯者也未必都凶。</p><p class="pl s2"><span class="lb">落到你身上</span>半成。犯煞要看日柱上见没见，别柱的不算；何况犯者也未必都凶。本命日柱庚戌：金舆、红艳、魁罡三颗都在日上，是真犯；孤辰在年支子，隔得远，力减。故只取日上那几颗，别柱的不硬算。落在日柱：这一柱是神煞的落脚处，也是判断轻重的界线。</p></div><p class="lead">入盘共 17 名。</p><table class="t"><tr><th style="width:17%">神煞名</th><th style="width:17%">柱位</th><th style="width:9%">吉凶取向</th><th>引文、白话与出处</th></tr><tr><td><b>天乙貴人</b></td><td>时支未</td><td>吉</td><td><div class="plx"><span class="lb">说人话</span>天乙是神煞里第一等的贵人，主有人扶助、逢难得解；庚日见丑未，你的未时正踩着它。</div><div class="plx s2"><span class="lb">落到</span>时支未即天乙，贵人落在时柱，多主晚辈、下属或晚年得助，遇事有人搭手。</div><div class="src" style="color:#6b6154">四库 F0082（卷三·論天乙貴人·第77段）「如丑未生而得甲戊庚之類」；万历 规则-卷三-032「甲戊庚牛羊六辛逄馬虎」</div></td></tr><tr><td><b>天德</b></td><td>月干乙</td><td>吉</td><td><div class="plx"><span class="lb">说人话</span>天德是按月份定的吉神，亥月的天德在乙。</div><div class="plx s2"><span class="lb">落到</span>月干就是乙，天德在位；它与月德同盘，是这八字里最整齐的一处吉象。</div><div class="src" style="color:#6b6154">四版无起例专条（据通例：亥月天德在乙）；吉凶取向见 四库 F0322（卷十·巫咸撮要·第32段）「日時俱逢二徳百事無凶」</div></td></tr><tr><td><b>月德</b></td><td>年干甲</td><td>吉</td><td><div class="plx"><span class="lb">说人话</span>月德也按月定，亥卯未三合之气归结在甲，所以甲为月德。</div><div class="plx s2"><span class="lb">落到</span>年干甲即月德，落在祖宗位，主家风厚、长辈有荫。</div><div class="src" style="color:#6b6154">蔣本 T3-029（卷三｜總論諸神煞）「亥𫑗未㑹午出丙人垣於甲…故壬甲丙庚謂之月德」</div></td></tr><tr><td><b>天月二德合</b></td><td>日干庚（天德乙之合）</td><td>吉</td><td><div class="plx"><span class="lb">说人话</span>与天德、月德相合的那个字叫二德合，主化凶为吉。</div><div class="plx s2"><span class="lb">落到</span>天德是乙，与乙相合的正是日干庚，所以二德合落在你自身，遇事多能圆转。</div><div class="src" style="color:#6b6154">四库 F0322「日時俱逢二徳百事無凶」（起例推：乙与庚合）</div></td></tr><tr><td><b>太极貴人</b></td><td>月支亥</td><td>吉</td><td><div class="plx"><span class="lb">说人话</span>太极贵人主有始有终、学问有根，庚辛见亥即是。</div><div class="plx s2"><span class="lb">落到</span>月支亥正踩太极，主做事终局收得住，也主对玄理旧学有兴趣。</div><div class="src" style="color:#6b6154">蔣本 T3-032（卷三｜總論諸神煞）「庚辛金得寅…見亥乃金生乎艮」</div></td></tr><tr><td><b>金輿</b></td><td>日支戌</td><td>吉</td><td><div class="plx"><span class="lb">说人话</span>金舆主车马、体面，庚日见戌。</div><div class="plx s2"><span class="lb">落到</span>日支戌即金舆，落在自身与配偶宫，主出行体面、有车马之便。</div><div class="src" style="color:#6b6154">四版无起例专条（通例：庚见戌）；柱位据原局推</div></td></tr><tr><td><b>將星</b></td><td>年支子</td><td>吉</td><td><div class="plx"><span class="lb">说人话</span>将星是三合局的中位，主有担当、能带人。</div><div class="plx s2"><span class="lb">落到</span>年支子为申子辰的中位，将星在祖上位，主少年时便有领头的意思。</div><div class="src" style="color:#6b6154">蔣本 T2-048（卷二｜論將星）三合中位；年支子属申子辰，中位在子</div></td></tr><tr><td><b>華蓋</b></td><td>日支戌／时支未</td><td>吉（主孤高藝術）</td><td><div class="plx"><span class="lb">说人话</span>华盖主孤高、好艺术玄学，亥卯未见未。</div><div class="plx s2"><span class="lb">落到</span>日支戌、时支未都带华盖，落在自身与晚年，主喜清静、亲近宗教艺文，也应一点孤。</div><div class="src" style="color:#6b6154">蔣本 T3-045（卷三｜總論諸神煞）「亥𫑗未得癸未之類」</div></td></tr><tr><td><b>紅艶</b></td><td>日支戌</td><td>杂（主艳丽，亦主淫浊）</td><td><div class="plx"><span class="lb">说人话</span>红艳主艳丽，也带一点情色之名，庚戌正是红艳日。</div><div class="plx s2"><span class="lb">落到</span>日支就是红艳，落在配偶宫，主自身仪表有吸引力，须防因情生扰。</div><div class="src" style="color:#6b6154">蔣本 T3-127（卷三｜總論諸神煞）「庚戌…為紅艶煞」</div></td></tr><tr><td><b>劫煞</b></td><td>月支亥</td><td>凶（有制则反权）</td><td><div class="plx"><span class="lb">说人话</span>劫煞主突发之夺，有制反能掌权。</div><div class="plx s2"><span class="lb">落到</span>月支亥为劫煞，落在事业根上；有土印压着，多作竞争而非真损。</div><div class="src" style="color:#6b6154">据原局推（日支戌属寅午戌，劫煞在亥）</div></td></tr><tr><td><b>亡神</b></td><td>月支亥</td><td>凶（得用则智）</td><td><div class="plx"><span class="lb">说人话</span>亡神主暗耗，得用则转为智谋。</div><div class="plx s2"><span class="lb">落到</span>月支亥兼亡神，与劫煞同宫，主谋事深、也易思虑过度。</div><div class="src" style="color:#6b6154">四库/万历 卷三 亡神起例；据原局推（年支子属申子辰，亡神在亥）</div></td></tr><tr><td><b>灾煞</b></td><td>年支子</td><td>凶</td><td><div class="plx"><span class="lb">说人话</span>灾煞主灾病突发。</div><div class="plx s2"><span class="lb">落到</span>年支子为灾煞，落在祖上位，主长辈或少年时有惊无险。</div><div class="src" style="color:#6b6154">据原局推（日支戌属寅午戌，灾煞在子）</div></td></tr><tr><td><b>孤辰</b></td><td>不明（卷七表未时凶列）</td><td>凶</td><td><div class="plx"><span class="lb">说人话</span>孤辰主孤独、六亲缘薄。</div><div class="plx s2"><span class="lb">落到</span>柱位不明，只见于卷七表未时凶列；既无柱位可定，本报告只记名、不作断。</div><div class="src" style="color:#6b6154">万历 卷七表 T048 未时「凶：孤辰、截路空亡」；表属选择家体系，柱位不明</div></td></tr><tr><td><b>寡宿</b></td><td>日支戌</td><td>凶（主孤）</td><td><div class="plx"><span class="lb">说人话</span>寡宿主独处、配偶缘薄。</div><div class="plx s2"><span class="lb">落到</span>日支戌即寡宿，正落配偶宫，与「妻迟」一说相应；但它与天乙同盘，不作凶断。</div><div class="src" style="color:#6b6154">万历 规则-卷三-084「亥子丑…退後一辰見戌為寡」</div></td></tr><tr><td><b>空亡</b></td><td>以年柱起：月支亥、日支戌落空；以日柱起：不犯</td><td>杂</td><td><div class="plx"><span class="lb">说人话</span>空亡是旬中轮空的两支，所落之处主虚而不实。</div><div class="plx s2"><span class="lb">落到</span>以日柱起不犯，以年柱起则月、日两支落空；两说并存，见本章空亡一节。</div><div class="src" style="color:#6b6154">见第二类</div></td></tr><tr><td><b>魁罡</b></td><td>日柱庚戌</td><td>杂（怕见财官刑冲）</td><td><div class="plx"><span class="lb">说人话</span>魁罡是庚辰、庚戌、壬辰、戊戌四日，性刚果决，最怕见财官与刑冲。</div><div class="plx s2"><span class="lb">落到</span>你正是庚戌魁罡日，这是全表最重的一条：主性硬、能任事；见财官则易生祸患，而本命财透、又无官，故刚而带险。</div><div class="src" style="color:#6b6154">四库 R0560（卷九·第367段）「六庚之中庚戌庚辰為魁罡怕見財官刑衝不見主為人麄豪暴勇而貴見則禍患百出」；万历 术语-卷三-084</div></td></tr><tr><td><b>天羅地網</b></td><td>月支亥、日支戌</td><td>凶（主淹滞）</td><td><div class="plx"><span class="lb">说人话</span>天罗地网主淹滞、事多阻滞。</div><div class="plx s2"><span class="lb">落到</span>月支亥、日支戌正构成天罗，落在事业与自身之间，主事情拖沓、须靠运冲开。</div><div class="src" style="color:#6b6154">蔣本 T3-082（卷三｜總論諸神煞）「戌亥爲天羅」</div></td></tr></table><h3 id="ssk"><span class="n2">附</span>空亡</h3><p><b>本命</b>　庚戌属甲辰旬（甲辰乙巳丙午丁未戊申己酉庚戌辛亥壬子癸丑），旬空寅、卯</p><ul class="rel"><li><b>以年柱起旬</b>　年柱甲子为甲子旬首，空戌亥；月支亥、日支戌俱落空。</li><li><b>并存说明</b>　两说起旬不同，四版未定于一尊；本报告两说并列，不择一。</li></ul><div class="qk"><blockquote><span class="v">四库本</span><span class="q">如甲子旬遁至酉而十干足所以無戌亥餘五干例見是為空亡然空而有實亡而有存所以未可便為㓙論</span><span class="bd b1">条件成立</span></blockquote><div class="src">卷三·論羊刃·论空亡·第179段（段首「空對實亡對有言神白經」）</div><div class="trm"><b>旬</b>　十干配十二支，余下两支为本旬空亡；<b>遁</b>　顺数</div><p class="pl"><span class="lb">说人话</span>甲子旬排到酉，十干就用完了，所以戌亥两支空；五旬同理。但空里有实、亡中有存，不能一见空亡就断凶。</p><p class="pl s2"><span class="lb">落到你身上</span>成立，且正落在本命两柱上。甲子旬排到酉，十干用完，故戌亥空；本命年柱甲子起旬，月支亥、日支戌俱落空。故月、日两支带虚：月令的资源不实、日主的根也不实。但空里有实、亡中有存，不能一见空就断凶。落在月柱与日柱：虚在资源与根气，不在人。</p></div><div class="qk"><blockquote><span class="v">四库本</span><span class="q">又甲子旬水土甲戌旬金甲申旬火土甲午旬火土甲辰旬木甲寅旬水土為眞空亡乂云響之有聲莫非虛中也是以大人之命要有虛中之徳空亡自旺有用乃大聲大應之器月日時三位俱空亡者不害為大貴人若値兩位雖有官不大</span><span class="bd b2">部分成立</span></blockquote><div class="src">卷三·論羊刃·论空亡·第181段（段首「又甲子旬水土甲戌旬金」）</div><div class="trm"><b>真空亡</b>　该旬五行与空支同类，空得更实；<b>三位</b>　月日时三柱</div><p class="pl"><span class="lb">说人话</span>各旬的空各有五行属性，甲辰旬属木；月日时三柱都空，反不妨作大贵人，只有两柱空才「有官不大」。</p><p class="pl s2"><span class="lb">落到你身上</span>半成，且方向相反。这条说月日时三柱都空，反不妨作大贵人；本命只月、日两支空，时支未不空，够不上三柱，故反贵这层不取。只取一句：两柱空，官不大——本命官本弱，正合。落在月柱与日柱：空在月日，时柱独实，晚景比中年稳，故这一段反而实在。</p></div><details class="fold"><summary>另有一说·卷三</summary><div class="qk"><blockquote><span class="v">四库本</span><span class="q">最怕落空謂之閒祿如甲辰旬空寅卯却得寅為甲之祿古人云資財聚散祿居空胎裏生時怕遇逢貧賤為奴多乞食飄飄身自從西東沈芝云禄入空亡何所知虛名虚譽</span><span class="bd b3">不成立·仅备一说</span></blockquote><div class="src">卷三·論十干祿·第32段（段首「又曰凡命帶祿最怕犯衝」）</div><div class="trm"><b>闲禄</b>　禄位落空，有名无实；<b>沈芝</b>　宋代命家</div><p class="pl"><span class="lb">说人话</span>最怕禄落空，叫闲禄：钱财聚散不定，禄在空里，只剩虚名虚誉。</p><p class="pl s2"><span class="lb">落到你身上</span>不成，本命没有禄可落空。庚禄在申，四柱无申，这一路无位可落；落空的是月支亥、日支戌，属财食与印，不是禄。故闲禄之说在本命上无处安放，只说明书把禄看得很重。落在月柱与日柱：空的是资源与根，不是名分。与伍章禄栏同指一事：禄这一头本就不作指望。</p></div></details><div class="qk"><blockquote><span class="v">蔣國祥本</span><span class="q">煞神最喜落空亡㐫煞空亡大吉昌／禄馬贵人還减福如逢相衝另一詳／空亡生旺必聰明𣦸絕嘍囉語不眞／犯盡空亡空裏𤼵空門藝術九流人／空亡遇相衝則不空宜生旺忌𣦸絶</span><span class="bd b2">部分成立</span></blockquote><div class="src">卷三｜子午𫑗酉四宫互換神煞｜空亡喜忌之限·F3-032</div><div class="trm"><b>生旺</b>　空亡那一支本身有气；<b>死绝</b>　无气</div><p class="pl"><span class="lb">说人话</span>凶煞落空反吉，禄马贵人落空减福；空亡生旺主聪明，死绝则说话不实；逢冲就不算空。</p><p class="pl s2"><span class="lb">落到你身上</span>半成，取凶煞落空反吉一头。本命空的是月支亥、日支戌：亥藏食神与偏财、戌藏偏印与官，都不是凶煞，故反吉用不上；但空亡生旺主聪明这半可借——庚坐戌有根，空而不弱。落在日柱：空而有根，是灵透，不是虚耗。故只取聪明一层，不生硬断吉。</p></div><details class="fold"><summary>另有 2 说·卷三</summary><div class="qk"><blockquote><span class="v">蔣國祥本</span><span class="q">又云天中一煞不可全以㐫言／如柱有惡神惡煞禍聚之地全要空亡觧之</span><span class="bd b3">不成立·仅备一说</span></blockquote><div class="src">卷三｜論空亡｜天中一煞不可全以㐫言·F3-017</div><div class="trm"><b>天中</b>　空亡的别名</div><p class="pl"><span class="lb">说人话</span>空亡不能一律当凶看；恶煞聚在一处，反倒要靠空亡来解。</p><p class="pl s2"><span class="lb">落到你身上</span>不成。本命空亡落在月、日两支，不在凶煞聚处；四柱也无重煞相叠，谈不上赖空来解。故这条在本命上没有对应的事，只说明空亡有时反是解药。落在月柱与日柱：空的是食财与印，解不了什么，也坏不了什么。与附录神煞表同指一事：孤辰截路那些煞，不靠空亡解。</p></div><div class="qk"><blockquote><span class="v">辛丑本</span><span class="q">如犯空亡，有下位來衝·亦為破禍成福·年月日時值此·必作食祿之人。</span><span class="bd b3">不成立·仅备一说</span></blockquote><div class="src">卷二·论行运·页0245-叶3</div><div class="trm"><b>下位</b>　下面的支，如年下为月；<b>食禄</b>　有俸禄可食</div><p class="pl"><span class="lb">说人话</span>犯了空亡，若下面有支来冲，反能破祸成福；年月日时见此，必作食禄之人。</p><p class="pl s2"><span class="lb">落到你身上</span>本命若以年起旬，是亥、戌落空，四柱里没有巳（冲亥）、辰（冲戌）来冲它们。所以「破祸成福」的条件不成立。</p></div></details><div class="qk"><blockquote><span class="v">万历本</span><span class="q">如甲子旬遁至酉一而十干足所以無戌亥餘五干例見是為空亡</span><span class="bd b4">体例说明·不作断语</span></blockquote><div class="src">卷三·论空亡·规则-卷三-072（块06·页0196-叶2）</div><div class="trm"><b>异文</b>　同一段在不同版本里字句有出入</div><p class="pl"><span class="lb">说人话</span>同前：甲子旬排到酉，十干用尽，戌亥为空。</p><p class="pl s2"><span class="lb">落到你身上</span>体例，与前条同文：甲子旬排到酉，十干用尽，戌亥为空。本报告只取月支亥、日支戌落空这一事实，不重复推演，也不把空亡当独立断法。落在月柱与日柱：两处皆虚，故论财论根都要留一分余地。与第壹章身强弱同指一事：根虚，所以身轻。</p></div><h3 id="ss7"><span class="n2">附</span>卷七表格里的一格</h3><p><b>庚戌日·未时</b>（万历｜块21（页0582-叶1～页0583-叶2））</p><ul class="rel"><li><b>日头</b>　庚戌日 支生干 義日吉 玉皇 辰未戌丑月 丙 丁壬年未丑月</li><li><b>格内</b>　未时｜吉：天乙貴人、右弼｜凶：孤辰、截路空亡</li></ul><p class="pl"><span class="lb">说人话</span>庚戌这一天支生干、属「义日」，带玉皇吉神；逢辰未戌丑月，或丙年、丁壬年的未丑月，另有说法。</p><p class="pl s2"><span class="lb">落到你身上</span>体例。庚戌这一天支生干、属义日，带玉皇吉神；逢辰未戌丑月另有说法。本命正是庚戌日、亥月，不在那几个月里，故只取义日一象：做事讲个义字，硬气。落在日柱：这一象说的是性情底色，不是吉凶判词，不据它断福，与叁章校验表同指一事。</p><p class="pl"><span class="lb">说人话</span>庚戌日的未时，吉神是天乙贵人与右弼，凶煞是孤辰与截路空亡。</p><p class="pl s2"><span class="lb">落到你身上</span>体例，逐格列吉凶神。庚戌日的未时，吉神是天乙贵人与右弼，凶煞是孤辰与截路空亡；本命时柱正是癸未，故这一格可对。吉凶同宫，本报告取吉神为主、凶煞为轻。落在时柱：天乙在未，孤辰亦在未，一贵一孤，看谁得位——贵坐时支，孤被压。</p><p class="lead">此格只记「未时」吉神二、凶煞二，未及财官身强弱；引用时须与子平月令取格分层，不得据此格断富贵。</p><div class="qk"><blockquote><span class="v">万历本</span><span class="q">陰陽家每日卜時各有吉凶選擇者慎焉余因悟人命既時為重生時得吉亦猶選擇之得吉也論財官印食雖與選擇不同而祿馬貴神則與子平無異驗之人命得吉果吉信不誣矣今將選擇家六十甲子每日十二時吉凶神煞並錄如左亦看命之一助也</span><span class="bd b4">体例说明·不作断语</span></blockquote><div class="src">卷七·论六十甲子得时吉凶·总纲</div><div class="trm"><b>阴阳家</b>　择日看时的那一派；<b>卜时</b>　挑时辰</div><p class="pl"><span class="lb">说人话</span>择日的人给每天每个时辰都定了吉凶；作者由此悟到人命重时，生时得吉如同择日得吉。财官印食虽与择日不同，禄马贵神却与子平无异。所以把这套逐时吉凶抄在下面，只作看命的一个帮手。</p><p class="pl s2"><span class="lb">落到你身上</span>体例。择日的人给每日每时定吉凶，作者故由此悟到人命重时：生时得吉，如同择日得吉。本报告借它说明时柱的分量——本命癸未时，未上坐天乙，时柱不薄。落在时柱：这一柱定晚年，也定子息。财官印食与择日不同，禄马贵神却可相参。</p></div><div class="src"><b>体例</b>　作者自述「今將選擇家六十甲子每日十二時吉凶神煞並錄如左亦看命之一助也」；表源出选择家（择日），非子平格局，只作「看命之一助」，不可据表直断富贵；与月令取格冲突时分層并置，不互相否决。</div>
+
+<h2 id="ml"><span class="n">捌</span>命例参照</h2>
+<p class="lead">先「庚日未时」，次「庚日他时」，再「身弱财旺食伤重」；每条注明同几柱异几柱，同柱异命不可移断。</p><div class="ss-row"><div class="nm">第 1 例<span>蔣本｜卷九｜六庚日未時斷｜未時總括局與歌訣</span></div><details class="fold"><summary>另有一说·卷九日时断</summary><div class="qk"><blockquote><span class="v">蔣國祥本</span><span class="q">鏡裏觀容局喜中仍帶憂雲開明月出作事恐綢繆/庚日未時庫有財鑰匙開處獨爲魁/運至財旺生官地富貴榮華不用猜/庚日時逄癸未喜逄丑戌榮財傷官背禄庫難開祖業盈全有碍父母夭孤空尅妻遲子晩和諧運行吉地免生灾官旺財鄉通㤗</span><span class="bd b3">不成立·仅备一说</span></blockquote><div class="src">卷九｜六庚日未時斷｜未時總括局與歌訣·R9-165</div><p class="pl"><span class="lb">说人话</span>这段说庚日未时财在库里，钥匙一开便为魁首；走财旺生官之运，富贵不必猜。</p><p class="pl s2"><span class="lb">落到你身上</span>不成，差在时辰与身强弱。这条命例是庚日未时、财在库，一开便为魁首；本命时柱也是癸未，时辰同，可日主庚金只一点五，开库之力不够，故同格而不同量。落在时柱：库同、钥匙同，扛的人不同，这是本命与它的第一处差别。</p></div></details><p><b>同柱</b>　2（日干庚、时柱癸未；日支未定）　<b>异柱</b>　年、月及日支不可比</p><p style="color:#8c2f22"><b>不可移断</b>　同柱异命，不可移断；「尅妻遲子」须另标前提</p></div><div class="ss-row"><div class="nm">第 2 例<span>四库｜卷九·六已日乙丑時斷（篇题错位）</span></div><details class="fold"><summary>另有一说·卷九日时断</summary><div class="qk"><blockquote><span class="v">四库本</span><span class="q">庚日時逢癸未喜逢丑戌榮財傷官背祿庫難開祖業盈全有碍父母夭孤空尅妻遲子晚和諧運行吉地免生灾官旺財鄕通泰</span><span class="bd b3">不成立·仅备一说</span></blockquote><div class="src">卷九·六已日乙丑時斷（篇题错位）·R0562（第469段，段首「庚日時逢癸未喜逢丑戌」）</div><p class="pl"><span class="lb">说人话</span>同一条的又一版本：财库难开、祖业有碍、父母缘薄、妻迟子晚，走到吉地免灾，官旺财乡通泰。</p><p class="pl s2"><span class="lb">落到你身上</span>不成，差在月令。这条与上条同源，说财库难开、妻迟子晚；本命妻迟子晚这半倒合，可「祖业有碍」不合——本命财透年月，祖荫不薄。故只取迟字，不取碍字。落在月柱：同在未时，月令不同，祖业一层就分出两说。</p></div></details><p><b>同柱</b>　2（日干庚、时柱癸未）　<b>异柱</b>　年、月、日支</p><p style="color:#8c2f22"><b>不可移断</b>　篇题与内容不符（引在〈六己日乙丑時斷〉篇下），引用须标「篇题错位」</p></div><div class="ss-row"><div class="nm">第 3 例<span>万历｜卷九·庚日癸未时·印财库与明癸制丁</span></div><details class="fold"><summary>另有一说·卷九</summary><div class="qk"><blockquote><span class="v">万历本</span><span class="q">庚日癸未時印財庫庚以乙為財未中入庫用丁為官已位科為印未中已丁却有明癸制之柱有巳制癸不透丁字居官顕逹若無已透丁為禍百端通火土運氣貴</span><span class="bd b3">不成立·仅备一说</span></blockquote><div class="src">卷九·庚日癸未时·印财库与明癸制丁·R9-039（页0825-叶1）</div><p class="pl"><span class="lb">说人话</span>庚日癸未时，财入未库、丁为官、巳为印；癸水明透压住丁火，柱中有巳制癸、又不透丁，才作显达。</p><p class="pl s2"><span class="lb">落到你身上</span>不成，差在一个巳字。这条要柱中有巳制癸，本命四柱无巳，癸又透干，条件不成立；它的官与印都在库里，本命也一样，只是没有那把钥匙。落在时柱与日柱：癸透于时、丁藏于戌未，故同局而缺制。与第贰章官星节同指一事。</p></div></details><p><b>同柱</b>　2（日干庚、时柱癸未）　<b>异柱</b>　年、月、日支</p><p style="color:#8c2f22"><b>不可移断</b>　条件句：柱有巳制癸则居官显达；无巳透丁则祸。本命无巳，须入条件校验</p></div><div class="ss-row"><div class="nm">第 4 例<span>蔣本｜卷九｜六庚日未時斷｜六庚日癸未時總斷</span></div><details class="fold"><summary>另有一说·卷九日时断</summary><div class="qk"><blockquote><span class="v">蔣國祥本</span><span class="q">六庚日生時癸未宫星魁制權星退/柱中見巳不逄丁却能顯達得官位/庚日癸未時印財庫庚以乙爲財未中入庫用丁爲官巳爲印未中巳丁却有明癸制之柱有巳制癸不透丁字居官顯達若無巳透丁爲禍百端通火土運氣貴</span><span class="bd b3">不成立·仅备一说</span></blockquote><div class="src">卷九｜六庚日未時斷｜六庚日癸未時總斷·R9-158</div><p class="pl"><span class="lb">说人话</span>六庚日生癸未时，宫星与魁星相制、权星退位；柱中见巳而不逢丁，反能显达得官。</p><p class="pl s2"><span class="lb">落到你身上</span>不成，差在行运与宫星。这条说宫星与魁星相制、权星退位，见巳不逢丁才显达；本命无巳、丁又藏，退位之说反而应了——权星退，故不走官路。落在时柱：宫星受制是真的，显达是假的。与伍章禄栏同指一事：官不管事，事业另走一路。</p></div></details><p><b>同柱</b>　2（日干庚、时柱癸未）　<b>异柱</b>　年、月、日支</p><p style="color:#8c2f22"><b>不可移断</b>　与万历 R9-039 同文；「柱中見巳」为条件</p></div><div class="ss-row"><div class="nm">第 5 例<span>四库｜卷九·六已日乙丑時斷（篇题错位）</span></div><details class="fold"><summary>另有一说·卷九日时断</summary><div class="qk"><blockquote><span class="v">四库本</span><span class="q">庚日庚辰時金水淸白六庚之中庚戌庚辰為魁罡怕見財官刑衝不見主為人麄豪暴勇而貴見則禍患百出</span><span class="bd b3">不成立·仅备一说</span></blockquote><div class="src">卷九·六已日乙丑時斷（篇题错位）·R0560（第367段，段首「庚日庚辰時金水淸白六」）</div><p class="pl"><span class="lb">说人话</span>庚日庚辰时，金水清白；庚戌、庚辰两日是魁罡，怕见财官刑冲，不见则为人粗豪暴勇而贵，见了祸患百出。</p><p class="pl s2"><span class="lb">落到你身上</span>不成，差在日柱与时柱。这条命例是庚辰时，两庚并立、金水清白；本命时柱癸未，不是庚辰，且庚戌日本身是魁罡，见财官则祸——本命财透官藏，正是见财那一半。落在日柱与时柱：魁罡在日不在时，轻重不同，故不可移断。</p></div></details><p><b>同柱</b>　1（日柱庚戌）　<b>异柱</b>　时柱为庚辰，与本命癸未不同；年、月不可比</p><p style="color:#8c2f22"><b>不可移断</b>　魁罡断语系于「庚辰时」篇下，只取日柱层；本命见财，须入条件校验</p></div><div class="ss-row"><div class="nm">第 6 例<span>万历｜卷六·魁罡日取财官印</span></div><details class="fold"><summary>另有一说·卷六</summary><div class="qk"><blockquote><span class="v">万历本</span><span class="q">如張時僉事庚午丁亥戊戌丙辰劉大受少卿丁亥癸丑庚戌戌寅二命魁罡日只取財官印是也</span><span class="bd b3">不成立·仅备一说</span></blockquote><div class="src">卷六·魁罡日取财官印·M6-029（页0483-叶1）</div><p class="pl"><span class="lb">说人话</span>举两命：张时僉事庚午丁亥戊戌丙辰、刘大受少卿丁亥癸丑庚戌戌寅，都是魁罡日，取财官印为用。</p><p class="pl s2"><span class="lb">落到你身上</span>不成，差在日柱与月令。两例都是魁罡日，一为戊戌、一为庚戌，与本命日柱同者只一例；可它们月令在亥、丑，取财官印为用，身旺能担。本命同样庚戌，身弱财旺，担不起同一副担子。落在日柱：故同日不同月，断语便不能搬。</p></div></details><p><b>同柱</b>　1（日柱庚戌）　<b>异柱</b>　年丁亥、月癸丑、时戊寅</p><p style="color:#8c2f22"><b>不可移断</b>　同柱异命；此二例明「魁罡日只取财官印」，与本命魁罡见财官可对看</p></div><div class="ss-row"><div class="nm">第 7 例<span>四库｜卷九·六已日乙丑時斷（篇题错位）</span></div><details class="fold"><summary>另有一说·卷九日时断</summary><div class="qk"><blockquote><span class="v">四库本</span><span class="q">庚日時逢丙戌偏官倉庫埋藏就中鬼賊不相當身弱錢財虚蕩運旺身强發福鴈行骨肉參商妻重子晚免刑傷老景封侯拜相</span><span class="bd b3">不成立·仅备一说</span></blockquote><div class="src">卷九·六已日乙丑時斷（篇题错位）·R0564（第548段，段首「庚日時逢丙戌偏官倉庫」）</div><p class="pl"><span class="lb">说人话</span>庚日丙戌时，偏官与财库埋在支里，鬼贼不当位；身弱则钱财虚荡，运旺身强才发福，妻重子晚、骨肉参商，晚年反封侯拜相。</p><p class="pl s2"><span class="lb">落到你身上</span>不成，差在时柱。这条是丙戌时，偏官与财库都埋在支里；本命癸未时，伤官透干，官星更藏。故「身弱则钱财虚荡」这半可借，「晚年封侯」那半不可搬。落在时柱：同为庚日，时柱一换，官星明暗就两样。与第贰章官星节同指一事。</p></div></details><p><b>同柱</b>　0（仅日干庚同）　<b>异柱</b>　时柱丙戌与癸未全异</p><p style="color:#8c2f22"><b>不可移断</b>　「身弱钱财虚荡」一句可作同类局参照，不可移断</p></div><div class="ss-row"><div class="nm">第 8 例<span>蔣本｜卷五｜論正財｜財臨庫墓</span></div><div class="qk"><blockquote><span class="v">蔣國祥本</span><span class="q">經云納粟奏名財庫居生旺之地／假令金以木爲財庫於未辛未日生是臨財庫／庚日生未時亦是身臨財庫生冬月謂之財庫居生地生春月謂之財庫居旺地主一生財帛豐𫝗因財致官</span><span class="bd b2">部分成立</span></blockquote><div class="src">卷五｜論正財｜財臨庫墓·G5-046</div><p class="pl"><span class="lb">说人话</span>书上说纳粟奏名是财库居生旺之地：金以木为财、库在未，辛未日生就是临财库；庚日未时也是身临财库，生冬月为居生地、生春月为居旺地。</p><p class="pl s2"><span class="lb">落到你身上</span>半成，差在生月。这条说庚日未时身临财库，生冬月为居生地、生春月为居旺地；本命亥月正是冬月，居生地这半合，故财能积。可「因财得官」不合，本命官弱。落在月柱与时柱：月令合、官星不合，取半不取全。与伍章财栏同指一事。</p></div><p><b>同柱</b>　2（日干庚、时支未）　<b>异柱</b>　日支、年、月</p><p style="color:#8c2f22"><b>不可移断</b>　条件句：「生冬月」为财库居生地。本命亥月属冬，条件成立（第三段复核）</p></div><div class="ss-row"><div class="nm">第 9 例<span>四库｜卷五·論正財</span></div><div class="qk"><blockquote><span class="v">四库本</span><span class="q">庚日生未時亦是身臨財庫生冬月謂之財庫居生地生春月謂之財庫居旺地主一生財帛豐厚因財致官</span><span class="bd b2">部分成立</span></blockquote><div class="src">卷五·論正財·T0139</div><p class="pl"><span class="lb">说人话</span>庚日生未时，身临财库：生冬月叫居生地，生春月叫居旺地，主一生财帛丰厚、因财得官。</p><p class="pl s2"><span class="lb">落到你身上</span>半成，差在身强弱。这条说庚日未时身临财库，主一生财帛丰厚、因财得官；本命时柱正合，可日主轻，财厚而身薄，厚的是账面不是手里。故只取财帛一层，不取官。落在时柱与日柱：库在时、身在日，中间隔着力气。与伍章财栏同指一事。</p></div><p><b>同柱</b>　2（日干庚、时支未）　<b>异柱</b>　日支、年、月</p><p style="color:#8c2f22"><b>不可移断</b>　与蔣本 G5-046 同文别版，可作四版互证</p></div><div class="ss-row"><div class="nm">第 10 例<span>蔣本｜卷三｜戰闘伏降刑衝破合｜伏降爲禍</span></div><details class="fold"><summary>另有一说·卷三</summary><div class="qk"><blockquote><span class="v">蔣國祥本</span><span class="q">如一命辛未辛𫑗辛𫑗巳亥鬼在強宫却喜甲申旬金空亡故雖不能富貴亦無災禍未滿五十而𣦸</span><span class="bd b3">不成立·仅备一说</span></blockquote><div class="src">卷三｜戰闘伏降刑衝破合｜伏降爲禍·M3-018</div><p class="pl"><span class="lb">说人话</span>举一命辛未辛卯辛卯己亥，鬼在强宫，却喜甲申旬金空亡，所以虽不富贵也无灾祸，未满五十而终。</p><p class="pl s2"><span class="lb">落到你身上</span>不成，差在日主与旬空。这条是辛日、甲申旬金空亡，故虽不富贵也无灾；本命庚日、甲子旬空戌亥，空的是月日两支，不是金。故空亡免灾这层搬不过来。落在月柱与日柱：旬不同，空处不同。与附录空亡节同指一事。</p></div></details><p><b>同柱</b>　0　<b>异柱</b>　四柱全异</p><p style="color:#8c2f22"><b>不可移断</b>　空亡解祸之例；同柱异命不可移断，只作空亡用法参照</p></div><p class="lead">相似不等于同命。断语各系其前提：月令、年时、成败救应；同柱异命者，不可移断。</p><div class="src"><b>篇题错位</b>　四库本「庚日時逢癸未」一条引在〈六己日乙丑時斷〉篇下，篇题与内容不符，引用时已标「篇题错位」。</div>
+
+<div class="foot">神煞出选择家与杂占者多，四本正文散见；本表只取正文出现、柱位可定者。「不可移断」一语，指同柱异命者不可径引他命断本命。</div>
+</div><script>/* 目录锚点落到折叠块上时自动展开，跳转不被收起挡住 */
+function _openFold(){var h=decodeURIComponent((location.hash||"").slice(1));if(!h)return;var e=document.getElementById(h);while(e){if(e.tagName==="DETAILS"){e.open=true;}e=e.parentElement;}}
+window.addEventListener("hashchange",_openFold);window.addEventListener("DOMContentLoaded",_openFold);_openFold();</script></body></html>
