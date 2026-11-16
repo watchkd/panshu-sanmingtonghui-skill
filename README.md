@@ -68,7 +68,7 @@ python -X utf8 生成报告.py --四柱 "戊午 戊午 戊午 戊午" --性别 �
 
 ## 数据依赖与版本
 
-**数据不在仓库里，走 Release。** 仓库本体 24 个文件、约 1.1 MB；数据包 `panshu-sanmingtonghui-data-v1.0.0.zip` 6.7 MB（解压后 19.3 MB / 287 个文件）。单个 zip，远低于 GitHub Release 每文件 2 GB 的上限，不需要拆分。
+**数据不在仓库里，走 Release。** 仓库本体 25 个文件、1.08 MB；数据包 `panshu-sanmingtonghui-data-v1.0.0.zip` 6.7 MB（解压后 19.3 MB / 287 个文件）。单个 zip，远低于 GitHub Release 每文件 2 GB 的上限，不需要拆分。
 
 - 下载：<https://github.com/watchkd/panshu-sanmingtonghui-skill/releases/download/data-v1.0.0/panshu-sanmingtonghui-data-v1.0.0.zip>
 - 版本页：<https://github.com/watchkd/panshu-sanmingtonghui-skill/releases/tag/data-v1.0.0>
